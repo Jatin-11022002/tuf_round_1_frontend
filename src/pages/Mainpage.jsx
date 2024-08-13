@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Banner from "../components/Banner";
+import Navbar from "../components/Navbar";
 
 const MainPage = () => {
   const [bannerData, setBannerData] = useState({
@@ -27,6 +28,7 @@ const MainPage = () => {
 
   return (
     <div style={styles.container}>
+      <Navbar />
       <h1 style={styles.heading}>Welcome!!</h1>
       {bannerData.isVisible ? (
         <Banner

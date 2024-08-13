@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Navbar from "../components/Navbar";
 
 const Dashboard = () => {
   const [bannerData, setBannerData] = useState({
@@ -45,6 +46,7 @@ const Dashboard = () => {
 
   return (
     <div style={styles.container}>
+      <Navbar />
       <h1 style={styles.heading}>Dashboard</h1>
       <form onSubmit={handleSubmit} style={styles.form}>
         <div style={styles.formGroup}>
